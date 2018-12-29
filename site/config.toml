@@ -1,9 +1,48 @@
 baseurl = "/"
 languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+title = "Zoë Smith"
+theme = "hugo-natrium-theme"
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 10
+pygmentsCodefences = true
+pygmentsStyle = "xcode"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+[[menu.main]]
+    name = "Zoë Smith"
+    url = "/about/"
+    weight = -140
+
+# [[menu.main]]
+#     name = "Tags"
+#     url = "/tags"
+#     weight = -120
+
+# [[menu.main]]
+#     name = "Categories"
+#     url = "/categories"
+#     weight = -130
+
+[params]
+    description = ""
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
+[outputFormats]
+    [outputFormats.PlainTextFile]
+      baseName = "keybase"
+      isPlainText = true
+      mediaType = "text/plain"
+      isHTML = false
