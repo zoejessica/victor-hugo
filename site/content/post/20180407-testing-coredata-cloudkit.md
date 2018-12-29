@@ -3,10 +3,11 @@ date = "2018-04-08"
 draft = false
 title = "CloudKit & CoreData: Testing 101"
 categories = ["CloudKit"]
-
+tags = ["coding", "iOS", "swift", "sync"]
+slug = "cloudkit-coredata-testing-101"
 +++
 
-#### N.B. This post will be part of a series I'm putting together on CloudKit and CoreData syncing. As I'm still in the middle of actually writing the code 😬 there will be definitely be updates to this post as my approach evolves. I'm leaving it live because I'm also testing how the site gets generated. Multitasking ftw. 
+#### N.B. This post will be part of a series I'm putting together on CloudKit and CoreData syncing. As I'm still in the middle of actually writing the code 😬 there will be definitely be updates to this post as my approach evolves. I'm leaving it live because I'm also testing how the site gets generated. Multitasking ftw.
 
 ## CloudKit test setup
 There’s probably a lot of code setting up a CoreData and CloudKit stack in your application - in mine it all gets kicked off after launch in the `AppDelegate` , starting a long process of setting up the model stack, finding containers, creating record zones and subscriptions, before beginning to sync any changes from the UI and the cloud.

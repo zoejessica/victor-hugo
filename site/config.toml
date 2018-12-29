@@ -13,7 +13,7 @@ pygmentsStyle = "xcode"
     tag = "tags"
 
 [permalinks]
-    post = "/:slug/"
+    post = "/:year-:month-:day/:slug/"
     page = "/:slug/"
 
 [[menu.main]]

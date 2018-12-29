@@ -1,10 +1,17 @@
-+++
-date = "2018-05-11"
-draft = false
-title = "AccessControlKitty: an Xcode extension to manage access levels"
-categories = ["Xcode"]
+---
+date: "2018-05-11"
+draft: false
+title: "AccessControlKitty: an Xcode extension to manage access levels"
+slug: accesscontrolkitty
 
-+++
+categories:
+- Xcode
+tags:
+- coding
+- Xcode
+- swift
+description: Describes the AccessControlKitty Xcode extension, to quickly toggle Swift code between public, private and internal access levels
+---
 
 I’ve put together a [little Xcode extension](https://github.com/zoejessica/AccessControlKitty) to change the access level of a selection of Swift code. For example, if you’ve decided to make a separate module out of some existing code, you can select some source code, click Editor -> Change Access Control -> Make public, and voila! All the selected classes, structs, properties, protocols, variables etc. etc. will magically be made public.
 
