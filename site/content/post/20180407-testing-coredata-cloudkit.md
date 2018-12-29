@@ -16,10 +16,10 @@ To keep things clean, I created a new `TestApp` application target against which
 
 1. Create a `TestApp` target application - I just used the standard single view template.
 2. Set its CloudKit entitlements - its default container will be different from the main app, which is just what we want:
-![Screenshot of test app CloudKit entitlements using default container](/images/Screenshot 2018-04-02 16.37.19.png)
+![Screenshot of test app CloudKit entitlements using default container](/images/testing101/Screenshot1.png)
 3. My code interacting with CloudKit is in a separate `CloudFramework`, with its own test target, `CloudFrameworkTests` that was automatically created. To actually use the  the `TestApp` instead of the main app, edit the `CloudFrameworkTests` target settings; in the General tab set `TestApp` as the host application:
-![Screenshot of test framework scheme, showing test app as host application](/images/Screenshot 2018-04-02 16.39.26.png)
-4. Now you can delete the main app from the `CloudFrameworkTests` scheme so it won’t get run automatically at the same time:![Screenshot of test framework scheme build options and targets](/images/Screenshot 2018-04-03 16.10.19.png)
+![Screenshot of test framework scheme, showing test app as host application](/images/testing101/Screenshot2.png)
+4. Now you can delete the main app from the `CloudFrameworkTests` scheme so it won’t get run automatically at the same time:![Screenshot of test framework scheme build options and targets](/images/testing101/Screenshot3.png)
 
 ## CoreData test setup
 The same applies to the local model cache in CoreData - it’s really handy to have a nice clean base for testing. I’m using the “in memory” option to spin up a brand new database whenever needed:
