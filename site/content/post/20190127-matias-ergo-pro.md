@@ -22,7 +22,7 @@ I’ve been using the [Matias Ergo Pro](https://matias.ca/ergopro/pc/) for a cou
 ![Photo of my desk setup](/images/20190127-matias-ergo-pro/photo.jpg)
 
 ## Pros
-* Ergonomic for shoulders, not just wrists. 
+* Ergonomic for shoulders, not just wrists.
 * To an outside observer, touch typing on this thing looks like witchcraft. I would buy it with blank keycaps if I could.
 * Mechanical. So clunk,  much travel.
 * Dedicated `undo/cut/copy/paste` buttons, inverted-T arrow keys, function keys, (forward) delete key.
@@ -48,7 +48,7 @@ I’ve been using the [Matias Ergo Pro](https://matias.ca/ergopro/pc/) for a cou
 
   ```
   $ chmod 755 /path/to/keyboardmapping.sh
-  $ sudo defaults write com.apple.loginwindow LoginHook ~/Library/Scripts/keyboardmapping.sh
+  $ sudo defaults write com.apple.loginwindow LoginHook /path/to/keyboardmapping.sh
   ```
 
 ## TL;DR
