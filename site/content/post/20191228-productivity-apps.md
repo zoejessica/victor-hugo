@@ -1,7 +1,7 @@
 ---
 date: "2019-12-28"
 draft: false
-title: "3 New (to me) Mac Productivity Apps"
+title: "3 new (to me) Mac productivity apps"
 slug: productivity-apps
 
 categories:
@@ -10,7 +10,7 @@ tags:
 - listicle
 - apps
 - macos
-description: 3 New (to me) Mac Productivity Apps
+description: 3 new (to me) Mac productivity apps
 ---
 
 I find myself increasingly drawn to using different apps for quite narrow functions – something about switching between tasks is made easier with a total change of environment. So in this vein, here are three apps I’ve been loving in the last part of 2019. They’re specialized but not complex, do that one thing very well and have made a genuine impact on my productivity.
