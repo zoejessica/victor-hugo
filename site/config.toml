@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://zoesmith.io/"
 languageCode = "en-us"
 title = "Zoë Smith"
 theme = "hugo-natrium-theme"
