@@ -8,7 +8,7 @@ categories:
 - Stuff
 tags:
 - listicle
-- suff
+- stuff
 description:What’s in my bag: long-haul, long-stay edition
 ---
 
