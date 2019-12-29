@@ -1,0 +1,28 @@
+{{- $paginator := . -}}
+
+{{- if gt $paginator.TotalPages 0 -}}
+<ul class="note-list">
+{{- range $paginator.Pages -}}
+<li><a class="note" href="{{- .RelPermalink -}}">
+<p class="note-title">{{- .Title | safeHTML -}}</p>
+<p class="note-date">{{- .Date.Format "2 January 2006" -}}</p>
+<!-- <p class="note-content">{{- .Summary | plainify | safeHTML -}}{{- if .Truncated -}}…{{- end -}}</p> -->
+{{- $relURL := .RelPermalink -}}
+{{- $imgs := .Params.imgs -}}
+{{- with .Params.imgs -}}
+<figure class="note-imgs">
+{{- $imgCount := len $imgs -}}
+{{- range $imgs -}}
+{{- $imgurl := lower . -}}
+{{- if and (not (hasPrefix $imgurl "http://")) (not (hasPrefix $imgurl "https://")) -}}
+{{- $imgurl = path.Join $relURL . -}}
+{{- end -}}
+<img src="{{- $imgurl -}}" alt />
+{{- end -}}
+</figure>
+{{- end -}}
+</a>
+</li>
+{{- end -}}
+</ul>
+{{- end -}}
