@@ -1,7 +1,9 @@
 baseurl = "https://zoesmith.io/"
 languageCode = "en-us"
 title = "Zoë Smith"
-theme = "hugo-natrium-theme"
+theme = "hugo-notepadium"
+copyright = "©2018-20 Zoë Smith"
+
 preserveTaxonomyNames = true
 rssLimit = 10
 paginate = 10
@@ -16,10 +18,14 @@ pygmentsStyle = "xcode"
     post = "/:year-:month-:day/:slug/"
     page = "/:slug/"
 
-[[menu.main]]
-    name = "Zoë Smith"
-    url = "/about/"
-    weight = -140
+[[params.nav.custom]]
+title = "About"
+url = "/about"
+
+# [[menu.main]]
+#     name = "Zoë Smith"
+#     url = "/about/"
+#     weight = -140
 
 # [[menu.main]]
 #     name = "Tags"
@@ -32,13 +38,14 @@ pygmentsStyle = "xcode"
 #     weight = -130
 
 [params]
-    description = ""
+    slogan = ""
+    logo = "/images/logo.png"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+[params.syntax]
+  use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+  theme = "dracula"
+  darkTheme = "xcode-dark"  # apply this theme in dark mode
+  webFonts = true  # builtin: 'Source Code Pro'
 
 [outputFormats]
     [outputFormats.PlainTextFile]
@@ -46,3 +53,10 @@ pygmentsStyle = "xcode"
       isPlainText = true
       mediaType = "text/plain"
       isHTML = false
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
