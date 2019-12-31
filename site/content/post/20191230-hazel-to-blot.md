@@ -31,3 +31,5 @@ The renaming action (on the top level `BlotBox` folder) pulls the capture date (
 2. There is no step 2! Hazel runs the renaming action, moves the photos to `Dropbox/Apps/Blot` where Blot picks ‘em up and publishes them.
 
 So easy. So much more time freed up for theme tweaking 😅.
+
+(Took me bloody ages, but I managed to create an [iOS Shortcut](https://www.icloud.com/shortcuts/58cd0cbbe31340649d08f99dcdf8ca53) which does the same thing.)
